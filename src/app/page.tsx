@@ -57,6 +57,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+      
 
       {features.map((feature, index: number) => (
         <section

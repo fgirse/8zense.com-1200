@@ -12,12 +12,12 @@ h3,
 h4,
 h5,
 h6 {
-  @apply font-secondary font-bold leading-tight text-dark dark:text-darkmode-dark;
+  @apply font-secondary font-bold leading-tight text-[#c0c6b4] dark:text-darkmode-dark;
 }
 
 h1,
 .h1 {
-  @apply text-h1-sm md:text-h1;
+  @apply  text-h1-sm md:text-h1;
 }
 
 h2,

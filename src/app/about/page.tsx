@@ -8,12 +8,12 @@ import { RegularPage } from "@/types";
 const About = () => {
   const data: RegularPage = getListPage("about/_index.md");
   const { frontmatter, content } = data;
-  const { title, meta_title, description, image } = frontmatter;
+  const { title_1, title_2, meta_title, description, image } = frontmatter;
 
   return (
     <>
       <SeoMeta
-        title={title}
+        title={title_1}
         meta_title={meta_title}
         description={description}
         image={image}
@@ -28,11 +28,11 @@ const About = () => {
                   src={image}
                   width={200}
                   height={200}
-                  alt={title}
+                  alt={title_1}
                 />
               )}
               <h2
-                dangerouslySetInnerHTML={markdownify(title)}
+                dangerouslySetInnerHTML={markdownify(title_2)}
                 className="h3 mb-6"
               />
               <div className="content">
